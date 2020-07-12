@@ -1,0 +1,20 @@
+.btn{
+    background-color: black;
+      color:white;
+      text-align: center    ;
+     
+      justify-content: center;
+      
+  }
+  .nav {
+      background-color: black;
+      color:white;
+      
+  }
+  .search{
+      background-color: white;
+  }
+
+  .input {
+      text-emphasis-color: white;
+  }
