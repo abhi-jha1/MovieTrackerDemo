@@ -8,7 +8,7 @@ class Overview extends React.Component {
 
             <div>
                 <div className="container">
-
+                    <span className="waves-effect waves-light btn-small btn " onClick={this.props.click} > Back</span>
                     <div className="row">
                         <div className="col s12 m4">
                             {this.props.currentMovie.poster_path == null ? <img className="" src={`https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg`} style={{

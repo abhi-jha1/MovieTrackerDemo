@@ -7,7 +7,7 @@ class Nav extends React.Component {
         return (
             <nav className='nav'>
                 <div className="nav-wrapper container">
-                    <span className='brand logo'>Movie Finder</span>
+                    <span className="waves-effect waves-light btn-small btn " onClick={this.props.click} >Movie Finder</span>
                 </div>
             </nav>
 

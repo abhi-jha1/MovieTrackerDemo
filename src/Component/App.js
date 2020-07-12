@@ -74,14 +74,19 @@ class App extends React.Component {
         })
     }
 
+    Home = () => {
+        this.state.currentMovie = null;
+        this.now_playing();
+    }
+
 
     render() {
         console.log(this.state.currentMovie);
         return (
             <nav>
                 <div className='App '>
-                    <Nav />
-                    {this.state.currentMovie == null ? <div> <Buttons latest={this.latest} now_playing={this.now_playing} upcoming={this.upcoming} /><Search handleSubmit={this.handleSubmit} handleChange={this.handleChange} /> <Movies movies={this.state.movies} data={this.currentMovie} /></div> : <Overview currentMovie={this.state.currentMovie} />}
+                    <Nav click={this.Home} />
+                    {this.state.currentMovie == null ? <div> <Buttons latest={this.latest} now_playing={this.now_playing} upcoming={this.upcoming} /><Search handleSubmit={this.handleSubmit} handleChange={this.handleChange} /> <Movies movies={this.state.movies} data={this.currentMovie} /></div> : <Overview currentMovie={this.state.currentMovie} click={this.Home} />}
 
                 </div>
 
