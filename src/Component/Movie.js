@@ -19,7 +19,7 @@ class Movie extends React.Component {
                         <span className="card-title">{this.props.details.title}</span>
                     </div>
                     <div className="card-action">
-                        <a onClick={() => this.props.click(this.props.details.id)}>View Details</a>
+                        <span onClick={() => this.props.click(this.props.details.id)}>View Details</span>
                     </div>
                 </div>
             </div>

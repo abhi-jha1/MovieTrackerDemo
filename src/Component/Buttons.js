@@ -5,9 +5,9 @@ class Buttons extends React.Component {
     render() {
         return (
             <div style={{ textAlign: "center" }} >
-                <a className="waves-effect waves-light btn-small btn " onClick={this.props.now_playing}>  Now Playing</a>
-                <a className="waves-effect waves-light btn-small btn  " onClick={this.props.upcoming}>Upcoming</a>
-                <a className="waves-effect waves-light btn-small btn " onClick={this.props.latest}>Latest</a>
+                <span className="waves-effect waves-light btn-small btn " onClick={this.props.now_playing}>  Now Playing</span>
+                <span className="waves-effect waves-light btn-small btn  " onClick={this.props.upcoming}>Upcoming</span>
+                <span className="waves-effect waves-light btn-small btn " onClick={this.props.latest}>Latest</span>
 
             </div>
         )
