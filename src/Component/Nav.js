@@ -7,7 +7,7 @@ class Nav extends React.Component {
         return (
             <nav className='nav'>
                 <div className="nav-wrapper container">
-                    <a href='#' className='brand logo'>Movie Finder</a>
+                    <a className='brand logo'>Movie Finder</a>
                 </div>
             </nav>
 
