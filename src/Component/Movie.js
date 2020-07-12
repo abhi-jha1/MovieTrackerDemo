@@ -6,7 +6,7 @@ class Movie extends React.Component {
 
         return (
 
-            <div className="col s12 m7 l3 nav">
+            <div className="col s12 m7 l3 mov">
                 <div className="card">
                     <div className="card-image">
                         {this.props.details.poster_path == null ? <img className="" src={`https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg`} style={{
