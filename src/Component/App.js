@@ -55,20 +55,20 @@ class App extends React.Component {
     }
 
     latest = () => {
-        fetch(`https://api.themoviedb.org/3/movie/latest?api_key=a351127d822104d386320e47ad39118b&language=en-US`).then(data => data.json()).then(data => {
+        fetch(`https://api.themoviedb.org/3/movie/latest?api_key=${this.apiKey}&language=en-US`).then(data => data.json()).then(data => {
             console.log(data);
             this.setState({ movies: [data] });
         })
     }
     now_playing = () => {
-        fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=a351127d822104d386320e47ad39118b&language=en-US&page=1`).then(data => data.json()).then(data => {
+        fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${this.apiKey}&language=en-US&page=1`).then(data => data.json()).then(data => {
             console.log(data.results);
             this.setState({ movies: [...data.results] });
         })
     }
 
     upcoming = () => {
-        fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=a351127d822104d386320e47ad39118b&language=en-US&page=1`).then(data => data.json()).then(data => {
+        fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${this.apiKey}&language=en-US&page=1`).then(data => data.json()).then(data => {
             console.log(data.results);
             this.setState({ movies: [...data.results] });
         })
