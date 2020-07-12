@@ -11,10 +11,10 @@ class Overview extends React.Component {
 
                     <div className="row">
                         <div className="col s12 m4">
-                            {this.props.currentMovie.poster_path == null ? <img className="" src={`https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg`} alt="Card image cap" style={{
+                            {this.props.currentMovie.poster_path == null ? <img className="" src={`https://s3-ap-southeast-1.amazonaws.com/upcode/static/default-image.jpg`} style={{
                                 width: "100%",
                                 height: '60%'
-                            }} /> : <img className="" src={`http://image.tmdb.org/t/p/w185${this.props.currentMovie.poster_path}`} alt="Card image" style={{
+                            }} /> : <img className="" src={`http://image.tmdb.org/t/p/w185${this.props.currentMovie.poster_path}`} style={{
                                 width: "100%",
                                 height: '60%'
                             }} />}
