@@ -7,7 +7,7 @@ class Movies extends React.Component {
         return (
             <div className='container'>
                 <div className='row'>
-                    <div className='col'>
+                    <div className='col s12'>
                         {
                             this.props.movies.map((movie, i) => {
                                 return (<Movie key={i} details={movie} click={this.props.data} />)
